@@ -32,12 +32,13 @@ $('document').ready(function() {
         // counter: [0, 0, 0, 0, 0]
     };
 
-    var view = function() {
+    var catListview = {
         // listview/list of images rendering function
+        render: function(){
         for (var i = 0; i < model.cats.length; i++) {
             $('ul').append('<li id= "'+ model.cats[i].name +'"><h2>' + model.cats[i].name + '</h2><h3>ClickNum:' + model.cats[i].clickCount + ' </h3><img src="' + model.cats[i].image + '"></li>');
         }
-
+    }
         // item: $('li'),
         // heading: '',
         // image: '',
