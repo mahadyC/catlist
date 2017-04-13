@@ -32,7 +32,7 @@ $('document').ready(function() {
         // counter: [0, 0, 0, 0, 0]
     };
 
-    var catListview = {
+    var catListView = {
         // listview/list of images rendering function
         render: function(){
         for (var i = 0; i < model.cats.length; i++) {
