@@ -48,7 +48,7 @@ $('document').ready(function() {
 
 
     var octopus = function() {
-        view();
+        catListView.render();
         $("ul [id='mini']").click(function(){
             // general incrementing function
             model.cats[0].clickCount = model.cats[0].clickCount + 1;
