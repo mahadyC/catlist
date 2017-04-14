@@ -35,8 +35,10 @@ $('document').ready(function() {
     var catListView = {
         // listview/list of images rendering function
         render: function(){
+            var cat;
         for (var i = 0; i < model.cats.length; i++) {
-            $('ul').append('<li id= "'+ model.cats[i].name +'"><h2>' + model.cats[i].name + '</h2><h3>ClickNum:' + model.cats[i].clickCount + ' </h3><img src="' + model.cats[i].image + '"></li>');
+            cat = cats[i]; //cat variable pointing to the cat in the mentioned array index
+            $('ul').append('<li id= "'+ model.cat.name +'"><h2>' + model.cat.name + '</h2><h3>ClickNum:' + model.cat.clickCount + ' </h3><img src="' + model.cat.image + '"></li>');
         }
     }
         // item: $('li'),
