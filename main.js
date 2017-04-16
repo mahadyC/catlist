@@ -38,8 +38,8 @@ $('document').ready(function() {
             var cat;
         for (var i = 0; i < model.cats.length; i++) {
             cat = model.cats[i]; //cat variable pointing to the cat in the mentioned array index
-            
-            $('ul').append('<li id= "'+ cat.name +'"><h2>' + cat.name + '</h2><h3>ClickNum:' + cat.clickCount + ' </h3><img src="' + cat.image + '"></li>');
+            var catListElement = $('<li id= "'+ cat.name +'"><h2>' + cat.name + '</h2><h3>ClickNum:' + cat.clickCount + ' </h3><img src="' + cat.image + '"></li>');
+            $('ul').append(catListElement);
             
         }
     }
