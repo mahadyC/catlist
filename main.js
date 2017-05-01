@@ -76,7 +76,7 @@ $('document').ready(function() {
 
         $("ul [id='bini']").click(function(){
 
-            model.counter[1] = model.counter[1] + 1;
+            model.cats[1].clickCount = model.cats[1].clickCount + 1;
 
         $('#headingId').remove();
         $('#catName').remove();
