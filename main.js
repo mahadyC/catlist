@@ -83,8 +83,8 @@ $('document').ready(function() {
         $('#image1').remove();
 
         $('div').append('<h2 id="catName">Bini</h2>');
-        $('div').append('<h2 id="headingId">Number of clicks:' + model.counter[1] + '</h2>');
-        $('div').append('<img id="image1" src="' + model.images[1] + '">');
+        $('div').append('<h2 id="headingId">Number of clicks:' + model.cats[1].clickCount + '</h2>');
+        $('div').append('<img id="image1" src="' + model.cats[1].image + '">');
 
         });
 
