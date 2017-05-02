@@ -1,5 +1,6 @@
 $('document').ready(function() {
     var model = {
+        currentCat: null,
         cats: [
             {
                 clickCount: 0,
@@ -55,6 +56,7 @@ $('document').ready(function() {
         // image: '',
         // clickCounter: ''
     };
+
 
 
 
