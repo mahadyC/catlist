@@ -57,7 +57,9 @@ $('document').ready(function() {
         // clickCounter: ''
     };
 
-
+    var catView = {
+        
+    };
 
 
     var octopus = function() {
