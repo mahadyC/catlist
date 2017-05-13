@@ -36,16 +36,14 @@ $('document').ready(function() {
     var catListView = {
         // listview/list of images rendering function
         render: function(){
-            var cat, catName;
+            var cat;
         for (var i = 0; i < model.cats.length; i++) {
             cat = model.cats[i]; //cat variable pointing to the cat in the mentioned array index
             var catListElement = $('<li id= "'+ cat.name +'"><h2>' + cat.name + '</h2><h3>ClickNum:' + cat.clickCount + ' </h3><img src="' + cat.image + '"></li>');
             //Add click event listener to each list items
             catListElement.click((function(catCopy){
                  return function(){
-                    catName = catCopy.name;
                     currentCat = catCopy;
-                    console.log(catCopy);
                 };
             })(cat));
             $('ul').append(catListElement);
