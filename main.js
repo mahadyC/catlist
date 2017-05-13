@@ -44,7 +44,8 @@ $('document').ready(function() {
             catListElement.click((function(catCopy){
                  return function(){
                     catName = catCopy.name;
-                    console.log(catName);
+                    currentCat = catCopy;
+                    console.log(catCopy);
                 };
             })(cat));
             $('ul').append(catListElement);
