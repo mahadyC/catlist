@@ -57,7 +57,10 @@ $('document').ready(function() {
     };
 
     var catView = {
-        
+       
+        render: function(){
+            
+        };
     };
 
 
