@@ -75,7 +75,7 @@ $('document').ready(function() {
     };
 
 
-    var octopus = function() {
+    var octopus = {
         init: function(){
             catListView.render();
         },
@@ -83,7 +83,7 @@ $('document').ready(function() {
             model.currentCat = cat;
         }
     };
-    octopus();
+    octopus.init();
 
 
     // var items = [$('#mini'), $('#bini'), $('#sini'), $('#gini'), $('#yini')];
