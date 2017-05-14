@@ -44,6 +44,7 @@ $('document').ready(function() {
             catListElement.click((function(catCopy){
                  return function(){
                     model.currentCat = catCopy;
+                    catView.render();
                 };
             })(cat));
             $('ul').append(catListElement);
@@ -76,7 +77,7 @@ $('document').ready(function() {
 
     var octopus = function() {
         catListView.render();
-        catView.render();
+        
         $("ul [id='mini']").click(function(){
           
         });
