@@ -43,7 +43,7 @@ $('document').ready(function() {
             //Add click event listener to each list items
             catListElement.click((function(catCopy){
                  return function(){
-                    currentCat = catCopy;
+                    model.currentCat = catCopy;
                 };
             })(cat));
             $('ul').append(catListElement);
@@ -66,7 +66,7 @@ $('document').ready(function() {
             $('#catName').remove();
             $('#image1').remove();
 
-            $('div').append('<h2 id="catName">'+ currentCat.name + '</h2>');
+            $('div').append('<h2 id="catName">'+ model.currentCat.name + '</h2>');
             $('div').append('<h2 id="headingId">Number of clicks:' + model.currentCat.clickCount + '</h2>');
             $('div').append('<img id="image1" src="' + model.currentCat.image + '">');
 
