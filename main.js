@@ -77,6 +77,9 @@ $('document').ready(function() {
 
     var octopus = function() {
         catListView.render();
+        setCurrentCat: function(cat){
+            model.currentCat = cat;
+        }
     };
     octopus();
 
