@@ -66,9 +66,9 @@ $('document').ready(function() {
             $('#catName').remove();
             $('#image1').remove();
 
-            $('div').append('<h2 id="catName">Mini</h2>');
-            $('div').append('<h2 id="headingId">Number of clicks:' + model.cats[0].clickCount + '</h2>');
-            $('div').append('<img id="image1" src="' + model.cats[0].image + '">');
+            $('div').append('<h2 id="catName">'+ currentCat.name + '</h2>');
+            $('div').append('<h2 id="headingId">Number of clicks:' + model.currentCat.clickCount + '</h2>');
+            $('div').append('<img id="image1" src="' + model.currentCat.image + '">');
 
         };
     };
