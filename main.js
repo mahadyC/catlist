@@ -59,7 +59,17 @@ $('document').ready(function() {
     var catView = {
        
         render: function(){
-            
+              // general incrementing function
+            model.cats[0].clickCount = model.cats[0].clickCount + 1;
+            // render function for the selected/clicked image
+            $('#headingId').remove();
+            $('#catName').remove();
+            $('#image1').remove();
+
+            $('div').append('<h2 id="catName">Mini</h2>');
+            $('div').append('<h2 id="headingId">Number of clicks:' + model.cats[0].clickCount + '</h2>');
+            $('div').append('<img id="image1" src="' + model.cats[0].image + '">');
+
         };
     };
 
@@ -67,17 +77,7 @@ $('document').ready(function() {
     var octopus = function() {
         catListView.render();
         $("ul [id='mini']").click(function(){
-            // general incrementing function
-            model.cats[0].clickCount = model.cats[0].clickCount + 1;
-            // render function for the selected/clicked image
-        $('#headingId').remove();
-        $('#catName').remove();
-        $('#image1').remove();
-
-        $('div').append('<h2 id="catName">Mini</h2>');
-        $('div').append('<h2 id="headingId">Number of clicks:' + model.cats[0].clickCount + '</h2>');
-        $('div').append('<img id="image1" src="' + model.cats[0].image + '">');
-
+          
         });
 
         $("ul [id='bini']").click(function(){
