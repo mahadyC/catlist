@@ -77,25 +77,6 @@ $('document').ready(function() {
 
     var octopus = function() {
         catListView.render();
-        
-        $("ul [id='mini']").click(function(){
-          
-        });
-
-        $("ul [id='bini']").click(function(){
-
-            model.cats[1].clickCount = model.cats[1].clickCount + 1;
-
-        $('#headingId').remove();
-        $('#catName').remove();
-        $('#image1').remove();
-
-        $('div').append('<h2 id="catName">Bini</h2>');
-        $('div').append('<h2 id="headingId">Number of clicks:' + model.cats[1].clickCount + '</h2>');
-        $('div').append('<img id="image1" src="' + model.cats[1].image + '">');
-
-        });
-
     };
     octopus();
 
