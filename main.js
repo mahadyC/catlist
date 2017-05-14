@@ -70,12 +70,13 @@ $('document').ready(function() {
             $('div').append('<h2 id="headingId">Number of clicks:' + model.currentCat.clickCount + '</h2>');
             $('div').append('<img id="image1" src="' + model.currentCat.image + '">');
 
-        };
+        }
     };
 
 
     var octopus = function() {
         catListView.render();
+        catView.render();
         $("ul [id='mini']").click(function(){
           
         });
