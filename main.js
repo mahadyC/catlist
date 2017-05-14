@@ -43,7 +43,7 @@ $('document').ready(function() {
             //Add click event listener to each list items
             catListElement.click((function(catCopy){
                  return function(){
-                    model.currentCat = catCopy;
+                    octopus.setCurrentCat(catCopy);
                     catView.render();
                 };
             })(cat));
