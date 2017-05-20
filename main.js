@@ -60,7 +60,9 @@ $('document').ready(function() {
     var catView = {
        
         render: function(){
-              // general incrementing function
+              // Incrementing function
+              var currentCat = octopus.getCurrentCat();
+              
             model.cats[0].clickCount = model.cats[0].clickCount + 1;
             // render function for the selected/clicked image
             $('#headingId').remove();
