@@ -81,6 +81,9 @@ $('document').ready(function() {
         },
         setCurrentCat: function(cat){
             model.currentCat = cat;
+        },
+        getCurrentCat: function(){
+            return model.currentCat;
         }
     };
     octopus.init();
