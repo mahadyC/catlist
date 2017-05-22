@@ -62,7 +62,8 @@ $('document').ready(function() {
         render: function(){
               // Incrementing function
               var currentCat = octopus.getCurrentCat();
-              currentCat.image.click(function(){
+              
+              $('#image1').click(function(){
                     currentCat.clickCount += 1;
               });
             
