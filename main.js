@@ -73,7 +73,7 @@ $('document').ready(function() {
             $('div').append('<img id="image1" src="' + model.currentCat.image + '">');
 
             $('#image1').click(function(){
-                    currentCat.clickCount += 1;
+                    octopus.incrementCounter();
               });
             console.log(currentCat.clickCount);
 
