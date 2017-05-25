@@ -91,6 +91,10 @@ $('document').ready(function() {
         },
         getCurrentCat: function(){
             return model.currentCat;
+        },
+        incrementCounter: function(){
+            model.currentCat.clickCount++;
+            catView.render();
         }
     };
     octopus.init();
