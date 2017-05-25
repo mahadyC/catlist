@@ -63,10 +63,6 @@ $('document').ready(function() {
               // Incrementing function
               var currentCat = octopus.getCurrentCat();
               
-              $('#image1').click(function(){
-                    currentCat.clickCount += 1;
-              });
-            
             // render function for the selected/clicked image
             $('#headingId').remove();
             $('#catName').remove();
@@ -76,6 +72,12 @@ $('document').ready(function() {
             $('div').append('<h2 id="headingId">Number of clicks:' + model.currentCat.clickCount + '</h2>');
             $('div').append('<img id="image1" src="' + model.currentCat.image + '">');
 
+            $('#image1').click(function(){
+                    currentCat.clickCount += 1;
+              });
+            console.log(currentCat.clickCount);
+
+            
         }
     };
 
