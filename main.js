@@ -68,9 +68,9 @@ $('document').ready(function() {
             $('#catName').remove();
             $('#image1').remove();
 
-            $('div').append('<h2 id="catName">'+ model.currentCat.name + '</h2>');
-            $('div').append('<h2 id="headingId">Number of clicks:' + model.currentCat.clickCount + '</h2>');
-            $('div').append('<img id="image1" src="' + model.currentCat.image + '">');
+            $('div').append('<h2 id="catName">'+ currentCat.name + '</h2>');
+            $('div').append('<h2 id="headingId">Number of clicks:' + currentCat.clickCount + '</h2>');
+            $('div').append('<img id="image1" src="' + currentCat.image + '">');
 
             $('#image1').click(function(){
                     octopus.incrementCounter();
