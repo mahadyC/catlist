@@ -86,8 +86,7 @@ $('document').ready(function() {
                 $('section').hide();
             });
             $('#save').click(function(){
-                currentCat.name = $('#catNameInput').val();
-                catView.render();
+                editCurrentCat();
             });
         }
     };
