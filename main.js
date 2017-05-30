@@ -109,6 +109,10 @@ $('document').ready(function() {
         },
         getCats: function(){
             return model.cats;
+        },
+        editCurrentCat: function(){
+            model.currentCat.name = $('#catNameInput').val();
+            catView.render();
         }
 
     };
