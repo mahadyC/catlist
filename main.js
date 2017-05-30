@@ -81,6 +81,10 @@ $('document').ready(function() {
             $('#admin').click(function(){
                 $('section').show();
             });
+
+            $('#cancel').click(function(){
+                $('section').hide();
+            });
         }
     };
 
