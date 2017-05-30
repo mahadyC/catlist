@@ -87,7 +87,7 @@ $('document').ready(function() {
             });
             $('#save').click(function(){
                 currentCat.name = $('#catNameInput').val();
-                console.log($('#catNameInput').val() );
+                catView.render();
             });
         }
     };
