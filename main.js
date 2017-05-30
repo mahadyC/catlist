@@ -85,6 +85,10 @@ $('document').ready(function() {
             $('#cancel').click(function(){
                 $('section').hide();
             });
+            $('#save').click(function(){
+                currentCat.name = $('#catNameInput').val();
+                console.log($('#catNameInput').val() );
+            });
         }
     };
 
@@ -106,6 +110,7 @@ $('document').ready(function() {
         getCats: function(){
             return model.cats;
         }
+
     };
     octopus.init();
 
