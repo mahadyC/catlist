@@ -87,6 +87,7 @@ $('document').ready(function() {
             });
             $('#save').click(function(){
                 octopus.editCurrentCat();
+                $('section').hide();
             });
         }
     };
