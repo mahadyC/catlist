@@ -78,7 +78,9 @@ $('document').ready(function() {
               });
             console.log(currentCat.clickCount);
 
-            
+            $('#admin').click(function(){
+                $('section').show();
+            });
         }
     };
 
