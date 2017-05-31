@@ -113,7 +113,8 @@ $('document').ready(function() {
         },
         editCurrentCat: function(){
             model.currentCat.name = $('#catNameInput').val();
-            catView.render();
+            model.currentCat.clickCount = $('#clickCount').val();
+            // catView.render();
         }
 
     };
