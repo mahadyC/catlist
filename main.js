@@ -80,15 +80,15 @@ $('document').ready(function() {
             console.log(currentCat.clickCount);
 
             $('#admin').click(function(){
-                $('form').show();
+                $('section').show();
             });
 
             $('#cancel').click(function(){
-                $('form').hide();
+                $('section').hide();
             });
             $('#save').click(function(){
                 octopus.editCurrentCat();
-                $('form').hide();
+                $('section').hide();
             });
         }
     };
