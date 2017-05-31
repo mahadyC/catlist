@@ -1,7 +1,7 @@
 $('document').ready(function() {
     var model = {
         currentCat: null,
-        showAdminPanel: false,
+        hideAdminPanel: true,
         cats: [
             {
                 clickCount: 0,
