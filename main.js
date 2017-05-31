@@ -114,7 +114,7 @@ $('document').ready(function() {
         editCurrentCat: function(){
             model.currentCat.name = $('#catNameInput').val();
             model.currentCat.clickCount = $('#clickCount').val();
-            // catView.render();
+            catView.render();
         }
 
     };
