@@ -1,6 +1,7 @@
 $('document').ready(function() {
     var model = {
         currentCat: null,
+        showAdminPanel: false,
         cats: [
             {
                 clickCount: 0,
