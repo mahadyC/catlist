@@ -103,6 +103,7 @@ $('document').ready(function() {
     var octopus = {
         init: function(){
             catListView.render();
+            adminView.init();
         },
         setCurrentCat: function(cat){
             model.currentCat = cat;
