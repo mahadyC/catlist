@@ -129,6 +129,9 @@ $('document').ready(function() {
                model.hideAdminPanel = false; 
             }
             
+        },
+        hideAdminPanel: function(){
+            $('section').hide();
         }
 
     };
