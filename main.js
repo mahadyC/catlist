@@ -93,6 +93,10 @@ $('document').ready(function() {
         }
     };
 
+    var adminView = {
+        
+    };
+
 
     var octopus = {
         init: function(){
