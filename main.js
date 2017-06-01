@@ -122,6 +122,9 @@ $('document').ready(function() {
             model.currentCat.name = $('#catNameInput').val();
             model.currentCat.clickCount = $('#clickCount').val();
             catView.render();
+        },
+        showAdminPanel: function(){
+            $('section').show();
         }
 
     };
