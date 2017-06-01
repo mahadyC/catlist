@@ -131,7 +131,11 @@ $('document').ready(function() {
             
         },
         hideAdminPanel: function(){
-            $('section').hide();
+            if (!model.hideAdminPanel) {
+                $('section').hide();
+                model.hideAdminPanel = true;
+            }
+            
         }
 
     };
