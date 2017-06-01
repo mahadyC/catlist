@@ -124,7 +124,11 @@ $('document').ready(function() {
             catView.render();
         },
         showAdminPanel: function(){
-            $('section').show();
+            if(model.hideAdminPanel){
+               $('section').show();
+               model.hideAdminPanel = false; 
+            }
+            
         }
 
     };
