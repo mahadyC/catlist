@@ -86,7 +86,7 @@ $('document').ready(function() {
     var adminView = {
         init: function(){
             $('#admin').click(function(){
-                $('section').show();
+                octopus.showAdminPanel();
             });
 
             $('#cancel').click(function(){
