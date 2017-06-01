@@ -79,6 +79,12 @@ $('document').ready(function() {
               });
             console.log(currentCat.clickCount);
 
+            
+        }
+    };
+
+    var adminView = {
+        init: function(){
             $('#admin').click(function(){
                 $('section').show();
             });
@@ -91,10 +97,6 @@ $('document').ready(function() {
                 $('section').hide();
             });
         }
-    };
-
-    var adminView = {
-        
     };
 
 
