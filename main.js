@@ -90,11 +90,11 @@ $('document').ready(function() {
             });
 
             $('#cancel').click(function(){
-                $('section').hide();
+                octopus.hideAdminPanel();
             });
             $('#save').click(function(){
                 octopus.editCurrentCat();
-                $('section').hide();
+                octopus.hideAdminPanel();
             });
         }
     };
