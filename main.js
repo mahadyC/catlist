@@ -39,6 +39,7 @@ $('document').ready(function() {
         render: function(){
             var cat,cats;
             cats = octopus.getCats();
+            $('ul').empty();
         for (var i = 0; i < cats.length; i++) {
             cat = cats[i]; //cat variable pointing to the cat in the mentioned array index
             var catListElement = $('<li id= "'+ cat.name +'"><h2>' + cat.name + '</h2><h3>ClickNum:' + cat.clickCount + ' </h3><img src="' + cat.image + '"></li>');
@@ -95,6 +96,7 @@ $('document').ready(function() {
             $('#save').click(function(){
                 octopus.editCurrentCat();
                 octopus.hideAdminPanel();
+                catListView.render();
             });
         }
     };
@@ -122,6 +124,7 @@ $('document').ready(function() {
             model.currentCat.name = $('#catNameInput').val();
             model.currentCat.clickCount = $('#clickCount').val();
             catView.render();
+            catListView.render();
         },
         showAdminPanel: function(){
             if(model.hideAdminPanel){
