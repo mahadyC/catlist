@@ -33,14 +33,17 @@ $('document').ready(function() {
     };
 
     var catListView = {
-        // listview/list of images rendering function
+        // listview rendering function
         render: function(){
+            
             var cat,cats;
             cats = octopus.getCats();
             $('ul').empty();
+        
         for (var i = 0; i < cats.length; i++) {
             cat = cats[i]; //cat variable pointing to the cat in the mentioned array index
             var catListElement = $('<li id= "'+ cat.name +'"><h2>' + cat.name + '</h2><h3>ClickNum:' + cat.clickCount + ' </h3><img src="' + cat.image + '"></li>');
+            
             //Add click event listener to each list items
             catListElement.click((function(catCopy){
                  return function(){
@@ -61,7 +64,6 @@ $('document').ready(function() {
               
               var currentCat = octopus.getCurrentCat();
               
-            // render function for the selected/clicked image
             $('#headingId').remove();
             $('#catName').remove();
             $('#image1').remove();
@@ -73,8 +75,6 @@ $('document').ready(function() {
             $('#image1').click(function(){
                     octopus.incrementCounter();
               });
-            console.log(currentCat.clickCount);
-
             
         }
     };
@@ -104,6 +104,7 @@ $('document').ready(function() {
             catListView.render();
             adminView.init();
         },
+        
         setCurrentCat: function(cat){
             model.currentCat = cat;
         },
