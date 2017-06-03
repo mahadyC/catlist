@@ -1,5 +1,9 @@
 $('document').ready(function() {
+   
+    /* =========== Model =========== */
+
     var model = {
+        
         currentCat: null,
         hideAdminPanel: true,
         cats: [
@@ -31,6 +35,8 @@ $('document').ready(function() {
         ]
         
     };
+
+    /* ============ View ============= */
 
     var catListView = {
         // listview rendering function
@@ -97,6 +103,7 @@ $('document').ready(function() {
         }
     };
 
+    /* ============== Octopus ================ */
 
     var octopus = {
         
@@ -104,7 +111,7 @@ $('document').ready(function() {
             catListView.render();
             adminView.init();
         },
-        
+
         setCurrentCat: function(cat){
             model.currentCat = cat;
         },
@@ -140,6 +147,8 @@ $('document').ready(function() {
         }
 
     };
+
+    // Initialize the application
     octopus.init();
 
 });
